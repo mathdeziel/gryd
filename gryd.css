@@ -1,0 +1,130 @@
+/*
+* gryd.css v1.0
+* Simple and lightweight CSS grid framework.
+* Copyright 2017, Mathieu Deziel
+* https://github.com/mathdeziel/gryd
+*/
+
+/* ---------------------------------- Grid ---------------------------------- */
+.container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.container:after,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col,
+.cols,
+.column,
+.columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+	padding: 12px;
+}
+
+/* Extra Small Devices - Mobiles (Default) */
+.xs-twelve		{ width: 100%; margin-left: 0; }
+.xs-eleven		{ width: 91.66666666666667%; }
+.xs-ten			{ width: 83.33333333333333%; }
+.xs-nine		{ width: 75%; }
+.xs-eight		{ width: 66.66666666666667%; }
+.xs-seven		{ width: 58.33333333333333%; }
+.xs-six			{ width: 50%; }
+.xs-five		{ width: 41.66666666666667%; }
+.xs-four		{ width: 33.33333333333333%; }
+.xs-three		{ width: 25%; }
+.xs-two			{ width: 16.66666666666667%; }
+.xs-one			{ width: 8.333333333333333%; }
+
+.xs-visible 	{ display: inherit; }
+.xs-hidden		{ display: none; }
+
+
+/* Small Devices - Tablets */
+@media (min-width: 768px){
+	.sm-twelve	{ width: 100%; margin-left: 0; }
+	.sm-eleven	{ width: 91.66666666666667%; }
+	.sm-ten		{ width: 83.33333333333333%; }
+	.sm-nine	{ width: 75%; }
+	.sm-eight	{ width: 66.66666666666667%; }
+	.sm-seven	{ width: 58.33333333333333%; }
+	.sm-six		{ width: 50%; }
+	.sm-five	{ width: 41.66666666666667%; }
+	.sm-four	{ width: 33.33333333333333%; }
+	.sm-three	{ width: 25%; }
+	.sm-two		{ width: 16.66666666666667%; }
+	.sm-one		{ width: 8.333333333333333%; }
+
+	.sm-visible { display: inherit; }
+	.sm-hidden	{ display: none; }
+}
+
+/* Medium Devices - Desktops */
+@media (min-width: 992px){
+	.md-twelve	{ width: 100%; margin-left: 0; }
+	.md-eleven	{ width: 91.66666666666667%; }
+	.md-ten		{ width: 83.33333333333333%; }
+	.md-nine	{ width: 75%; }
+	.md-eight	{ width: 66.66666666666667%; }
+	.md-seven	{ width: 58.33333333333333%; }
+	.md-six		{ width: 50%; }
+	.md-five	{ width: 41.66666666666667%; }
+	.md-four	{ width: 33.33333333333333%; }
+	.md-three	{ width: 25%; }
+	.md-two		{ width: 16.66666666666667%; }
+	.md-one		{ width: 8.333333333333333%; }
+
+	.md-visible { display: inherit; }
+	.md-hidden	{ display: none; }
+}
+
+/* Large Devices - HD Desktops */
+@media (min-width: 1200px){
+	.lg-twelve	{ width: 100%; margin-left: 0; }
+	.lg-eleven	{ width: 91.66666666666667%; }
+	.lg-ten		{ width: 83.33333333333333%; }
+	.lg-nine	{ width: 75%; }
+	.lg-eight	{ width: 66.66666666666667%; }
+	.lg-seven	{ width: 58.33333333333333%; }
+	.lg-six		{ width: 50%; }
+	.lg-five	{ width: 41.66666666666667%; }
+	.lg-four	{ width: 33.33333333333333%; }
+	.lg-three	{ width: 25%; }
+	.lg-two		{ width: 16.66666666666667%; }
+	.lg-one		{ width: 8.333333333333333%; }
+
+	.lg-visible { display: inherit; }
+	.lg-hidden	{ display: none; }
+}
+
+/* -------------------------------- Utilities ------------------------------- */
+.left		{ left: 0px; }
+.right		{ right: 0px;	}
+.top		{ top: 0px; }
+.bottom		{ bottom: 0px; }
+.fixed		{ position: fixed; }
+.absolute 	{ position: absolute; }
+.relative 	{ position: relative; }
+
+.text-center	{ text-align: center; }
+.text-justify	{ text-align: justify; }
+.uppercase 		{ text-transform: uppercase; }
+.lowercase		{ text-transform: lowercase; }
+.capitalize		{ text-transform: capitalize; }
+
+img.round 	{ border-radius: 100%; }
+
+.debug div {
+	border-style: dashed !important;
+	border-width: 1px;
+	border-color: red;
+}
+/* -------------------------------------------------------------------------- */
